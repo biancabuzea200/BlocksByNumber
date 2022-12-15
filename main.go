@@ -20,6 +20,7 @@ func main() {
 	}
 	WSS := os.Getenv("WSS")
 	DSN := os.Getenv("DSN")
+
 	fmt.Println("Dialing...")
 	client, err := ethclient.Dial(WSS)
 	if err != nil {
